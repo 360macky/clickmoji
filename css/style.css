@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #ff691f;
+    --lightgreen: #7fdbb6;
+    --lightblue: #91d2fa;
+    --red: #e81c4f;
+    --yellow: #fab81e;
+    --pink: #f58ea8;
+    --green: #19cf86;
+    --grey: #abb8c2;
+    --purple: #981ceb;
+    --blue: #1b95e0;
+
+    font: 1rem/1.175 'BlinkMacSystemFont', -apple-system, 'Roboto', sans-serif;
+}
+
+#app {
+    display: grid;
+    grid-template-areas:
+        '. . . .'
+        '. . . .'
+        '. . . .';
+    padding: 96px;
+    grid-gap: 32px;
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    width: 3.5rem;
+    height: 3.5rem;
+    vertical-align: calc(-0.12109375em);
+}
+
+.grid-item {
+    display: grid;
+    grid-template-rows: 65% 35%;
+    background: whitesmoke;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 60px;
+    transition: transform 500ms;
+}
+
+.grid-item:hover {
+    transition: transform 500ms;
+    transform: scale(1.1);
+}
+
+.grid-cell--top,
+.grid-cell--bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-cell--top {
+    border-radius: 4px 4px 0 0;
+}
+.grid-cell--bottom {
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+
+.bounce {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    33% {
+        transform: rotate(12deg) scale(1.2);
+    }
+    67% {
+        transform: rotate(-12deg) scale(0.8);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
