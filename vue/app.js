@@ -1,5 +1,10 @@
 'use strict';
 
+function emojify(name) {
+    let out = `<img src="emojis/` + name + `.png" />`;
+    return out;
+}
+
 Vue.component('swatch', {
     props: [],
     template: ``,
