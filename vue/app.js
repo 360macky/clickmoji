@@ -30,5 +30,8 @@ const app = new Vue({
             { emoji: emojify('wolf'), color: '#000000' },
         ],
     },
-    methods: {},
+    methods: {
+        activate: () => {},
+        gradient: () => {},
+    },
 });
