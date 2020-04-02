@@ -1,7 +1,7 @@
 'use strict';
 
 function emojify(name) {
-    let out = `<img src="emojis/` + name + `.png" />`;
+    let out = `<img src="images/emojis/` + name + `.png" />`;
     return out;
 }
 
