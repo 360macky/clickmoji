@@ -15,6 +15,9 @@ Vue.component('swatch', {
                     :class="{ bounce: swatch == active }"
                 ></span>
             </div>
+            <div class="grid-cell--bottom" :style="corrected_color()">
+                {{ swatch.color.toUpperCase() }}
+            </div>
         </div>
     `,
     methods: {
