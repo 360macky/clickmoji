@@ -14,7 +14,7 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     </head>
     <body>
-        <div id="app" class="app">
+        <div id="app" class="app" :style="gradient(active)">
             <div v-for="swatch in swatches" v-html="swatch.emoji"></div>
         </div>
         <script src="./vue/app.js"></script>
