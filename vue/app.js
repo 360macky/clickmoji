@@ -52,7 +52,16 @@ const app = new Vue({
         ],
     },
     methods: {
-        activate: () => {},
-        gradient: () => {},
+        activate: function (swatch) {
+            this.active = swatch;
+        },
+        gradient: function (swatch) {
+            return {
+                background:
+                    'linear-gradient(100deg, whitesmoke -100%, ' +
+                    swatch.color +
+                    ')',
+            };
+        },
     },
 });
