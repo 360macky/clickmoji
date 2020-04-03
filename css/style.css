@@ -42,6 +42,7 @@ img {
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 60px;
     transition: transform 500ms;
+    cursor: pointer;
 }
 
 .grid-item:hover {
