@@ -15,7 +15,13 @@
     </head>
     <body>
         <div id="app" class="app" :style="gradient(active)">
-            <div v-for="swatch in swatches" v-html="swatch.emoji"></div>
+            <swatch
+                v-for="swatch in swatches"
+                @click.native="activate(swatch)"
+                :active="active"
+                :swatch="swatch"
+                :effect="gradient"
+            ></swatch>
         </div>
         <script src="./vue/app.js"></script>
     </body>

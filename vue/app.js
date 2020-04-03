@@ -6,9 +6,27 @@ function emojify(name) {
 }
 
 Vue.component('swatch', {
-    props: [],
-    template: ``,
-    methods: {},
+    props: ['active', 'swatch', 'effect'],
+    template: `
+        <div class="grid-item">
+            <div class="grid-cell--top" :style="effect(swatch)">
+                <span
+                    v-html="swatch.emoji"
+                    :class="{ bounce: swatch == active }"
+                ></span>
+            </div>
+        </div>
+    `,
+    methods: {
+        corrected_color: function () {
+            return {
+                color:
+                    this.swatch.color == '#ffffff'
+                        ? '#000000'
+                        : this.swatch.color,
+            };
+        },
+    },
 });
 
 const app = new Vue({
