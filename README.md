@@ -5,6 +5,8 @@
 
 <img src="./screenshot.png" align="center" />
 
+<p align="center"><a href="https://360macky.github.io/clickmoji/">🦄 Launch the app 🚀</a></p>
+
 <p align="center">🖌️ One click in one emoji and change the color 🎨</p>
 
 ## 📝 Development
